@@ -15,4 +15,3 @@ ensure => running,
 enable => true,
 subscribe => File['/etc/sysconfig/memcached'],
 }
-}
