@@ -51,6 +51,6 @@ exec { "cowsay 'welcome to ${::fqdn}!' > /etc/motd":
 }
 
 host { 'testing.puppetlabs.vm':
-  ensure => present
+  ensure => present,
   ip = 127.0.0.1,
   }
