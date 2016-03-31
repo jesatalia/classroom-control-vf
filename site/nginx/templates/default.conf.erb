@@ -1,9 +1,6 @@
-# /site/nginx/files/default.conf to /site/nginx/templates/default.conf.erb
- server {
-    listen 80;
-
-    root /var/www;
-    index index.html index.htm;
-
-    server_name _;
+server {
+listen 80;
+root <%= @docroot %>;
+index index.html index.htm;
+server_name _;
 }
